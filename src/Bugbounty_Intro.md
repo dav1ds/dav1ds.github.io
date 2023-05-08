@@ -1,6 +1,6 @@
 ## Bug Bounty (BB)
 
-![Programme de Bug Bounty](bug-bounty-program-wanted.png)
+![Programme de Bug Bounty](images/bug-bounty-program-wanted.png)
 
 ## Principe et objectif:
 
