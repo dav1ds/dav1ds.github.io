@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 100 1000 300">
+
+  <metadata>image/svg+xml</metadata>
+  <defs>
+
+    <linearGradient id="gradient_diamond" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="1"/>
+    </linearGradient>
+
+    <linearGradient id="gradient_rectangle" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="1"/>
+    </linearGradient>
+
+    <path id="arrowhead" fill="black" d="m0,0 l-8,-5  c 2,1 2,9 0,10  z"/>
+
+    <rect id="result_box" x="0" y="-50" width="240" height="80"/>
+  </defs>
+
+  <style>
+    rect {
+      fill: url(#gradient_rectangle);
+      stroke: black;
+      stroke-width: 1px;
+    }
+
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      text-anchor: middle;
+    }
+
+    path {
+      stroke-width: 1.2;
+      stroke: black;
+    }
+  </style>
+
+  <g transform="translate(0,140)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,45)">
+      <text x="0" y= "0">Must the</text>
+      <text x="0" y="16">attacker be</text>
+      <text x="0" y="32">authorized to the</text>
+      <text x="0" y="48">vulnerable component</text>
+      <text x="0" y="64">prior to the</text>
+      <text x="0" y="80">attack?</text>
+    </g>
+  </g>
+
+  <path fill="none" d="m180,220 h10 v-70 h12 m30,0 h268"/>
+  <use xlink:href="#arrowhead" transform="translate(500,150)"/>
+  <text x="215" y="155">No</text>
+
+  <path fill="none" d="m180,220 h10 v80 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(250,300)"/>
+  <text x="215" y="305">Yes</text>
+
+  <g transform="translate(250,220)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,45)">
+      <text x="0" y= "0"></text>
+      <text x="0" y="16">Are</text>
+      <text x="0" y="32">administrator</text>
+      <text x="0" y="48">privileges</text>
+      <text x="0" y="64">required?</text>
+      <text x="0" y="80"></text>
+    </g>
+  </g>
+
+  <path fill="none" d="m430,300 h10 v-50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,250)"/>
+  <text x="465" y="255">No</text>
+
+  <path fill="none" d="m430,300 h10 v50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,350)"/>
+  <text x="465" y="355">Yes</text>
+
+  <g transform="translate(500,160)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">None (N)</text>
+    <text x="120" y="-12">An unauthorized attacker</text>
+    <text x="120" y="4"></text>
+    <text x="120" y="20"></text>
+  </g>
+
+  <g transform="translate(500,260)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Low (L)</text>
+    <text x="120" y="-12">User level access required</text>
+    <text x="120" y="4"></text>
+    <text x="120" y="20"></text>
+  </g>
+
+  <g transform="translate(500,360)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">High (H)</text>
+    <text x="120" y="-12">Administrator or system level</text>
+    <text x="120" y="4">access required</text>
+    <text x="120" y="20"></text>
+  </g>
+
+
+  <path style="fill:#aaf; stroke:#aaf" d="m780,140 l-9,14 c 4,-4 14,-4 18,0 z"/>
+  <line style="fill:#aaf; stroke:#aaf; stroke-width: 6px;" x1="780" y1="150" x2="780" y2="350"/>
+
+  <g transform="translate(860,240)">
+    <text x="0" y= "0">Base Score increases</text>
+    <text x="0" y= "16">as fewer privileges</text>
+    <text x="0" y= "32">are required</text>
+    <text x="0" y= "48"></text>
+    <text x="0" y= "64"></text>
+  </g>
+
+</svg>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 400">
+
+  <metadata>image/svg+xml</metadata>
+  <defs>
+
+    <linearGradient id="gradient_diamond" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="1"/>
+    </linearGradient>
+
+    <linearGradient id="gradient_rectangle" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="1"/>
+    </linearGradient>
+
+    <path id="arrowhead" fill="black" d="m0,0 l-8,-5  c 2,1 2,9 0,10  z"/>
+
+    <rect id="result_box" x="0" y="-50" width="240" height="80"/>
+  </defs>
+
+  <style>
+    rect {
+      fill: url(#gradient_rectangle);
+      stroke: black;
+      stroke-width: 1px;
+    }
+
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      text-anchor: middle;
+    }
+
+    path {
+      stroke-width: 1.2;
+      stroke: black;
+    }
+  </style>
+
+  <g transform="translate(0,120)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,45)">
+      <text x="0" y= "0">Does the</text>
+      <text x="0" y="16">attacker exploit</text>
+      <text x="0" y="32">the vulnerable</text>
+      <text x="0" y="48">component via</text>
+      <text x="0" y="64">the network</text>
+      <text x="0" y="80">stack?</text>
+    </g>
+  </g>
+
+  <path fill="none" d="m180,200 h10 v-100 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(250,100)"/>
+  <text x="215" y="105">Yes</text>
+
+  <path fill="none" d="m180,200 h10 v100 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(250,300)"/>
+  <text x="215" y="305">No</text>
+
+  <g transform="translate(250,20)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,45)">
+      <text x="0" y= "0">Must the</text>
+      <text x="0" y="16">vulnerability be</text>
+      <text x="0" y="32">exploited from a</text>
+      <text x="0" y="48">network adjacent</text>
+      <text x="0" y="64">to the</text>
+      <text x="0" y="80">target?</text>
+    </g>
+  </g>
+
+  <g transform="translate(250,220)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,45)">
+      <text x="0" y= "0"></text>
+      <text x="0" y="16">Does the</text>
+      <text x="0" y="32">attacker require</text>
+      <text x="0" y="48">physical access</text>
+      <text x="0" y="64">to the target?</text>
+      <text x="0" y="80"></text>
+    </g>
+  </g>
+
+  <path fill="none" d="m430,100 h10 v-50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,50)"/>
+  <text x="465" y="55">No</text>
+
+  <path fill="none" d="m430,100 h10 v50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,150)"/>
+  <text x="465" y="155">Yes</text>
+
+  <path fill="none" d="m430,300 h10 v-50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,250)"/>
+  <text x="465" y="255">No</text>
+
+  <path fill="none" d="m430,300 h10 v50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,350)"/>
+  <text x="465" y="355">Yes</text>
+
+  <g transform="translate(500,60)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Network (N)</text>
+    <text x="120" y="-12">Vulnerability is exploitable from</text>
+    <text x="120" y="4">across the Internet, or absent more</text>
+    <text x="120" y="20">information, assume worst case</text>
+  </g>
+
+  <g transform="translate(500,160)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Adjacent (A)</text>
+    <text x="120" y="-12">Vulnerability is exploitable across a</text>
+    <text x="120" y="4">limited physical or logical network,</text>
+    <text x="120" y="20">i.e., Bluetooth, Wi-Fi, etc.</text>
+  </g>
+
+  <g transform="translate(500,260)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Local (L)</text>
+    <text x="120" y="-12">Attack is committed through a local</text>
+    <text x="120" y="4">application vulnerability, or the</text>
+    <text x="120" y="20">attacker is able to log in locally</text>
+  </g>
+
+  <g transform="translate(500,360)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Physical (P)</text>
+    <text x="120" y="-12">Attacker requires physical access</text>
+    <text x="120" y="4">to the vulnerable component</text>
+    <text x="120" y="20"></text>
+  </g>
+
+
+  <path style="fill:#aaf; stroke:#aaf" d="m780,50 l-9,14 c 4,-4 14,-4 18,0 z"/>
+  <line style="fill:#aaf; stroke:#aaf; stroke-width: 6px;" x1="780" y1="60" x2="780" y2="350"/>
+
+  <g transform="translate(860,174)">
+    <text x="0" y= "0">Base Score increases</text>
+    <text x="0" y= "16">the farther (logically</text>
+    <text x="0" y= "32">and physically)</text>
+    <text x="0" y= "48">the attacker can be</text>
+    <text x="0" y= "64">from the target</text>
+  </g>
+
+</svg>

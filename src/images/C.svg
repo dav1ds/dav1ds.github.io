@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 50 1000 300">
+
+  <metadata>image/svg+xml</metadata>
+  <defs>
+
+    <linearGradient id="gradient_diamond" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="1"/>
+    </linearGradient>
+
+    <linearGradient id="gradient_rectangle" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="1"/>
+    </linearGradient>
+
+    <path id="arrowhead" fill="black" d="m0,0 l-8,-5  c 2,1 2,9 0,10  z"/>
+
+    <rect id="result_box" x="0" y="-50" width="240" height="80"/>
+  </defs>
+
+  <style>
+    rect {
+      fill: url(#gradient_rectangle);
+      stroke: black;
+      stroke-width: 1px;
+    }
+
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      text-anchor: middle;
+    }
+
+    path {
+      stroke-width: 1.2;
+      stroke: black;
+    }
+  </style>
+
+  <g transform="translate(0,150)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,66)">
+      <text x="0" y= "0">Is there</text>
+      <text x="0" y="16">any impact to</text>
+      <text x="0" y="32">confidentiality?</text>
+    </g>
+  </g>
+
+  <path fill="none" d="m180,230 h10 v-80 h12 m30,0 h14"/>
+  <use xlink:href="#arrowhead" transform="translate(250,150)"/>
+  <text x="215" y="155">Yes</text>
+
+  <path fill="none" d="m180,230 h10 v70 h12 m30,0 h268"/>
+  <use xlink:href="#arrowhead" transform="translate(500,300)"/>
+  <text x="215" y="305">No</text>
+
+  <g transform="translate(250,70)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,37)">
+      <text x="0" y= "0">Can the</text>
+      <text x="0" y="16">attacker obtain</text>
+      <text x="0" y="32">all information from the</text>
+      <text x="0" y="48">impacted component; or</text>
+      <text x="0" y="64">is the disclosed</text>
+      <text x="0" y="80">information</text>
+      <text x="0" y="96">critical?</text>
+    </g>
+  </g>
+
+  <path fill="none" d="m430,150 h10 v-50 h12 m30,0 h14"/>
+  <use xlink:href="#arrowhead" transform="translate(500,100)"/>
+  <text x="465" y="105">Yes</text>
+
+  <path fill="none" d="m430,150 h10 v50 h12 m30,0 h14"/>
+  <use xlink:href="#arrowhead" transform="translate(500,200)"/>
+  <text x="465" y="205">No</text>
+
+  <g transform="translate(500,110)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">High (H)</text>
+    <text x="120" y="-12">All information is disclosed to</text>
+    <text x="120" y="4">the attacker; or some</text>
+    <text x="120" y="20">critical information is disclosed</text>
+  </g>
+
+  <g transform="translate(500,210)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Low (L)</text>
+    <text x="120" y="-12">Some information can be obtained,</text>
+    <text x="120" y="4">and/or the attacker does not have</text>
+    <text x="120" y="20">control over the kind or degree</text>
+  </g>
+
+  <g transform="translate(500,310)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">None (N)</text>
+    <text x="120" y="-12">No information is disclosed</text>
+    <text x="120" y="4"></text>
+    <text x="120" y="20"></text>
+  </g>
+
+
+  <path style="fill:#aaf; stroke:#aaf" d="m780,90 l-9,14 c 4,-4 14,-4 18,0 z"/>
+  <line style="fill:#aaf; stroke:#aaf; stroke-width: 6px;" x1="780" y1="100" x2="780" y2="300"/>
+
+  <g transform="translate(860,190)">
+    <text x="0" y= "0">Base Score increases</text>
+    <text x="0" y= "16">with the degree of</text>
+    <text x="0" y= "32">information disclosed</text>
+    <text x="0" y= "48"></text>
+    <text x="0" y= "64"></text>
+  </g>
+
+</svg>

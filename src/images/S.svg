@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="240 0 760 200">
+
+  <metadata>image/svg+xml</metadata>
+  <defs>
+
+    <linearGradient id="gradient_diamond" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="100%"/>
+    </linearGradient>
+
+    <linearGradient id="gradient_rectangle" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" offset="0"/>
+      <stop stop-color="#ddd" offset="100%"/>
+    </linearGradient>
+
+    <path id="arrowhead" fill="black" d="m0,0 l-8,-5  c 2,1 2,9 0,10  z"/>
+
+    <rect id="result_box" x="0" y="-50" width="240" height="80"/>
+  </defs>
+
+  <style>
+    rect {
+      fill: url(#gradient_rectangle);
+      stroke: black;
+      stroke-width: 1px;
+    }
+
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      text-anchor: middle;
+    }
+
+    path {
+      stroke-width: 1.2;
+      stroke: black;
+    }
+  </style>
+
+  <g transform="translate(250,20)">
+    <path fill="url(#gradient_diamond)" d="m90,0 l90,80 l-90,80 l-90,-80 z"/>
+
+    <g transform="translate(90,40)">
+      <text x="0" y= "0">Can the</text>
+      <text x="0" y="16">attacker affect</text>
+      <text x="0" y="32">a component whose</text>
+      <text x="0" y="48">authority is different</text>
+      <text x="0" y="64">than the vulnerable</text>
+      <text x="0" y="80">component?</text>
+    </g>
+  </g>
+
+  <path fill="none" d="m430,100 h10 v-50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,50)"/>
+  <text x="465" y="55">Yes</text>
+
+  <path fill="none" d="m430,100 h10 v50 h12 m30,0 h20"/>
+  <use xlink:href="#arrowhead" transform="translate(500,150)"/>
+  <text x="465" y="155">No</text>
+
+  <g transform="translate(500,60)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Changed (C)</text>
+    <text x="120" y="-12">Impacts caused to systems</text>
+    <text x="120" y="4">beyond the vulnerable</text>
+    <text x="120" y="20">component</text>
+  </g>
+
+  <g transform="translate(500,160)">
+    <use xlink:href="#result_box"/>
+    <text x="120" y="-32">Unchanged (U)</text>
+    <text x="120" y="-12">Impact is localized to the</text>
+    <text x="120" y="4">vulnerable component</text>
+    <text x="120" y="20"></text>
+  </g>
+
+  <path style="fill:#aaf; stroke:#aaf" d="m780,30 l-9,14 c 4,-4 14,-4 18,0 z"/>
+  <line style="fill:#aaf; stroke:#aaf; stroke-width: 6px;" x1="780" y1="40" x2="780" y2="170"/>
+
+  <g transform="translate(860,74)">
+    <text x="0" y= "0">Base Score is greater</text>
+    <text x="0" y= "16">when systems beyond</text>
+    <text x="0" y= "32">the vulnerable</text>
+    <text x="0" y= "48">component are</text>
+    <text x="0" y= "64">impacted</text>
+  </g>
+
+</svg>
