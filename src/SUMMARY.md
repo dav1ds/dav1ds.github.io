@@ -2,6 +2,7 @@
 
 # Introduction
 
+- [Presentation Pentest](./Pentest_presentation_methodologie.md)
 - [Presentation](./Bugbounty_Intro.md)
 
 - [CVSS](./cvss.md)
