@@ -1,11 +1,13 @@
 # Summary
 
-# Introduction
+# Cours LP Cyber
 
 - [Presentation Pentest](./Pentest_presentation_methodologie.md)
-- [Presentation](./Bugbounty_Intro.md)
+- [Presentation BugBounty](./Bugbounty_Intro.md)
 
-- [CVSS](./cvss.md)
+- [CVSS 3.1](./cvss.md)
+- [CVSS 4.0](./cvss4.md)
+- [Methodologie d'évaluation des risques OWASP](./owasp_methodo.md)
 
 # Type de vulnérabilités
 
