@@ -1,0 +1,6 @@
+[book]
+authors = ["david serp"]
+language = "fr"
+multilingual = false
+src = "src"
+title = "Cours cybersecurité"
