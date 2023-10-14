@@ -9,6 +9,7 @@
 - [CVSS 4.0](./cvss4.md)
 - [Methodologie d'évaluation des risques OWASP](./owasp_methodo.md)
 
+<!--hidden 
 # Type de vulnérabilités
 
 - [CORS](./CORS.md)
@@ -18,4 +19,4 @@
 - [SSRF](./SSRF.md)
 - [XSS](./XSS.md)
 - [SQLI](./sql_injection.md)
-
+-->
