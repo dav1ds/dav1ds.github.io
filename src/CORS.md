@@ -1,7 +1,6 @@
 # CORS (Cross Origin Source sharing)
 
-CORS est une "technologie" qui permet d'assouplir le principe de "Same Origin Policy"
-et de permettre la communication entre les sites web.
+CORS est une "technologie" qui permet d'assouplir le principe de "Same Origin Policy" et de permettre la communication entre les sites web.
 
 Principe de fontionnement de SOP:
 ![Normal SOP](images/SOP_CORS.png)
