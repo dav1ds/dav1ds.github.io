@@ -19,13 +19,13 @@ docker run -it __nom_du_conteneur__ /bin/bash
 > docker start __nom ou id du conteneur__
 
 
-# Désisntallation de docker 
+# Désinstallation de docker 
 
-```
-sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
+``` rust
+>sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 
-sudo rm -rf /var/lib/docker
-sudo rm -rf /var/lib/containerd
+>sudo rm -rf /var/lib/docker
+>sudo rm -rf /var/lib/containerd
 ```
 
 [Voir la cheat-sheet/memo docker](images/docker-commands-cheat-sheet-pdf.pdf)
