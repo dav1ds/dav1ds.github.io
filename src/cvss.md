@@ -50,7 +50,7 @@ Composé de 2 ensemble de métriques
 
 
 
-Ces métriques de base sont utilisés dans les activités de bugbounty pour qualifier une vulnérabilité.
+Ces métriques de base sont utilisés dans les activités de __bugbounty__ pour qualifier une vulnérabilité.
 
 Exemple de notation :
 
