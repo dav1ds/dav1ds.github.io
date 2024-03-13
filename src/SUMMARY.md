@@ -1,6 +1,6 @@
 # Summary
 
-# Cours LP Cyber
+# Cours Cyber
 
 - [Presentation Pentest](./Pentest_presentation_methodologie.md)
 - [Presentation BugBounty](./Bugbounty_Intro.md)
