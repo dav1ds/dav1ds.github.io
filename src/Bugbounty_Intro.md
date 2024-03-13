@@ -43,3 +43,8 @@ Exemples:
 - CORS with real security impact
 - Horizontal and vertical privilege escalation
 
+## Formulaire de rapport
+
+
+![Formulaire pour le rapport](images/BB_forms.png)
+![Formulaire pour le rapport](images/BB_forms2.png)

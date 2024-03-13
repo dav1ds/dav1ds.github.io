@@ -2,8 +2,8 @@
 
 # Cours Cyber
 
-- [Presentation Pentest](./Pentest_presentation_methodologie.md)
-- [Presentation BugBounty](./Bugbounty_Intro.md)
+- [Pentest](./Pentest_presentation_methodologie.md)
+- [BugBounty](./Bugbounty_Intro.md)
 
 - [CVSS 3.1](./cvss.md)
 - [CVSS 4.0](./cvss4.md)
