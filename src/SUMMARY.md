@@ -5,6 +5,7 @@
 - [Pentest](./Pentest_presentation_methodologie.md)
 - [BugBounty](./Bugbounty_Intro.md)
     - [Vulnérabilités](./vulns_students.md)
+    - [Conseil pour la redaction des rapports](./conseil_rapport_bb.md)
 
 - [CVSS 3.1](./cvss.md)
 - [CVSS 4.0](./cvss4.md)
