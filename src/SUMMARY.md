@@ -16,19 +16,19 @@
 - [Installation](./docker_install.md)
 - [Quelques commandes utiles](./docker_commands.md)
 
-<!--hidden 
+
 # Type de vulnérabilités
 
 - [CORS](./CORS.md)
+- [CSRF](./CSRF.md)
 - [HSTS](./HSTS.md)
 - [IDOR](./IDOR.md)
 - [RCE](./RCE.md)
 - [SSRF](./SSRF.md)
 - [XSS](./XSS.md)
+- [XXE](./XXE.md)
 - [SQLI](./sql_injection.md)
+- [Business Logic](./businesslogic.md)
+- [MiM](./MiM.md)
 
-
-# Test
-
-- [Mimn](./MiM.md)
->
+<!--  caché des sections \<!--hidden \> >  
