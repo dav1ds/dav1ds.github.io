@@ -5,7 +5,7 @@
 - [Pentest](./Pentest_presentation_methodologie.md)
 - [BugBounty](./Bugbounty_Intro.md)
     - [Vulnérabilités](./vulns_students.md)
-    - [Conseil pour la redaction des rapports](./conseil_rapport_bb.md)
+    - [Conseil pour la rédaction des rapports](./conseil_rapport_bb.md)
 
 - [CVSS 3.1](./cvss.md)
 - [CVSS 4.0](./cvss4.md)
@@ -14,9 +14,10 @@
 # Docker
 
 - [Installation](./docker_install.md)
+- [Concept](./docker_concept.md) 
 - [Quelques commandes utiles](./docker_commands.md)
 
-
+<!-- hidden
 # Type de vulnérabilités
 
 - [CORS](./CORS.md)
@@ -30,5 +31,5 @@
 - [SQLI](./sql_injection.md)
 - [Business Logic](./businesslogic.md)
 - [MiM](./MiM.md)
-
+-->
 <!--  caché des sections \<!--hidden \> >  
