@@ -7,11 +7,11 @@ Le score de gravité (CVSS) et la qualité du rapport vous permettent d'obtenir 
 
 ##  Contrôle avant publication d'un rapport
 
-- La vulnérabilité est-elle dans le périmètre du programme ? En tant que chasseur de bogues, vous devez respecter les règles du programme et ne chasser que sur les périmètres autorisés.
+- La vulnérabilité est-elle dans le périmètre du programme ? En tant que chasseur de vulnerabilité, vous devez respecter les règles du programme et ne chasser que sur les périmètres autorisés.
 
-- Votre bogue fait-il partie de la liste des vulnérabilités admissibles du programme ? Une vulnérabilité non qualifiée risque d'entraîner le rejet du rapport et sa clôture en RTFS (Read The Fine Scope).
+- Votre decouverte fait-elle partie de la liste des vulnérabilités admissibles du programme ? Une vulnérabilité non qualifiée risque d'entraîner le rejet du rapport et sa clôture en RTFS (Read The Fine Scope).
 
-- Le bogue a-t-il un impact potentiel sur la sécurité ? En règle générale, la validation exige un impact direct sur la sécurité (sauf si la politique du programme en dispose autrement).
+- La vulnérabilité  a-t-ell un impact potentiel sur la sécurité ? En règle générale, la validation exige un impact direct sur la sécurité (sauf si la politique du programme en dispose autrement).
 
 ## Analyse de l'impact
 
@@ -58,7 +58,7 @@ Le PoC sert essentiellement à prouver l'existence de la vulnérabilité. L'une 
 
 - Exploitation:
 
-Une démonstration des étapes qu'un attaquant pourrait suivre pour exploiter la vulnérabilité. Ces étapes doivent être faciles à suivre afin que les triagers puissent reproduire votre exploit et valider votre rapport le plus rapidement possible.
+Une démonstration des étapes qu'un attaquant pourrait suivre pour exploiter la vulnérabilité. Ces étapes doivent être faciles à suivre pour permettre à l'equipe de sécurité ( client) de reproduire votre exploit et valider votre rapport le plus rapidement possible.
 
 Vous pouvez également inclure un script d'exploitation, ce qui est particulièrement pratique pour les vulnérabilités avancées comportant de nombreuses étapes complexes.
 
@@ -74,4 +74,4 @@ Fournissez une solution technique pour résoudre la vulnérabilité. Ce n'est pa
 
 Ajoutez des liens vers des ressources qui fournissent un contexte ou des informations supplémentaires qui aideront l'équipe de sécurité à comprendre la vulnérabilité. 
 
-Par exemple, il peut s'agir d'URL pour la définition CWE pertinente et d'avis de sécurité pour des vulnérabilités existantes avec lesquelles votre bogue peut être enchaîné.
+Par exemple, il peut s'agir d'URL pour la définition CWE pertinente et d'avis de sécurité pour des vulnérabilités existantes avec lesquelles votre nouvelle faille peut être enchaîné.
