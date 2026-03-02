@@ -1,4 +1,4 @@
-# Vulnérabilités fréquentes
+# Vulnérabilités fréquentes éligibles aux primes sur des programmes de BugBounty 
 
 1. XSS Stored 
 2. XSS Reflected
